@@ -41,7 +41,7 @@ export default function Hero2() {
                             Your Growth Is Our Business.
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-stone-100 font-medium">
-                            Partner with experts who care about your success as much as you do. Let's build your future
+                            Partner with experts who care about your success as much as you do. Let&apos;s build your future
                             together with precision and expertise in every calculation.
                         </p>
 

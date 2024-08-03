@@ -1,6 +1,6 @@
 'use client';
 import testimonials from '../data/testimonials.json'
-import React, {useEffect, useRef, useState} from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 type TestimonialCardProps = {
     testimonial: {
@@ -14,7 +14,8 @@ type TestimonialCardProps = {
     index: number;
     isVisible: boolean;
 }
-const TestimonialCard: React.FC<TestimonialCardProps> = ({testimonial, index, isVisible}) => {
+
+const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial, index, isVisible }) => {
     const truncateText = (text: string, length: number) => {
         if (text.length <= length) {
             return text;
@@ -52,27 +53,33 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({testimonial, index, is
                 </figcaption>
             </figure>
         </div>
-
     )
 }
+
 export default function Testimonials() {
     const [visibleCards, setVisibleCards] = useState(new Array(testimonials.length).fill(false));
-    const [titleVisible, setTitleVisible] = useState(false); // State to control visibility of the title and description
+    const [titleVisible, setTitleVisible] = useState(false);
 
-    const refs = testimonials.map(() => useRef(null));
-    const titleRef = useRef(null); // Ref for the title and description container
+    const testimonialsRef = useRef<(HTMLDivElement | null)[]>([]);
+    const titleRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
-                entries.forEach((entry, index) => {
+                entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        setTitleVisible(true)
-                        setVisibleCards((visibleCards) => {
-                            const updatedVisibility = [...visibleCards];
-                            updatedVisibility[index] = true;
-                            return updatedVisibility;
-                        });
+                        if (entry.target === titleRef.current) {
+                            setTitleVisible(true);
+                        } else {
+                            const index = testimonialsRef.current.indexOf(entry.target as HTMLDivElement);
+                            if (index !== -1) {
+                                setVisibleCards((prev) => {
+                                    const updated = [...prev];
+                                    updated[index] = true;
+                                    return updated;
+                                });
+                            }
+                        }
                         observer.unobserve(entry.target);
                     }
                 });
@@ -83,20 +90,18 @@ export default function Testimonials() {
         if (titleRef.current) {
             observer.observe(titleRef.current);
         }
-        refs.forEach((ref, index) => {
-            if (ref.current) {
-                observer.observe(ref.current);
-            }
+        testimonialsRef.current.forEach((ref) => {
+            if (ref) observer.observe(ref);
         });
 
         return () => {
             if (titleRef.current) observer.unobserve(titleRef.current);
-            refs.forEach(ref => {
-                if (ref.current) observer.unobserve(ref.current);
+            testimonialsRef.current.forEach((ref) => {
+                if (ref) observer.unobserve(ref);
             });
         };
+    }, []);
 
-    }, [refs, titleRef]);
     return (
         <div className="bg-stone-100 py-24 sm:py-32">
             <div className={`mx-auto max-w-7xl px-6 lg:px-8 ${titleVisible ? 'fade-in visible' : 'fade-in'}`} ref={titleRef}>
@@ -109,9 +114,17 @@ export default function Testimonials() {
                 <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
                     <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
                         {testimonials.map((testimonial, index) => (
-                            <div ref={refs[index]} key={index}>
-                                <TestimonialCard testimonial={testimonial} index={index}
-                                                 isVisible={visibleCards[index]}/>
+                            <div
+                                ref={(el: HTMLDivElement | null) => {
+                                    testimonialsRef.current[index] = el;
+                                }}
+                                key={index}
+                            >
+                                <TestimonialCard
+                                    testimonial={testimonial}
+                                    index={index}
+                                    isVisible={visibleCards[index]}
+                                />
                             </div>
                         ))}
                     </div>

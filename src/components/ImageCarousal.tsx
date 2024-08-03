@@ -88,7 +88,7 @@ const Carousel: React.FC = () => {
             <div className="flex justify-center py-12">
                 <p className="hover:bg-white transition-transform duration-500 ease-in-out relative rounded-full bg-transparent border-2 border-stone-800 px-4 py-1.5 text-sm leading-6 text-stone-800 ring-1 ring-inset ring-gray-900/5">
                         <span
-                            className="hidden md:inline">We've helped over a 100 companies grow their businesses.</span>
+                            className="hidden md:inline">We&apos;ve helped over a 100 companies grow their businesses.</span>
                     <a href="#" className="font-semibold text-stone-950">
                         <span aria-hidden="true" className="absolute inset-0"/> Read our customer stories{' '}
                         <span className="arrow">→</span>

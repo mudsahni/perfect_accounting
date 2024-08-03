@@ -14,7 +14,7 @@ const ServicePageDetailsCard: React.FC<ServicePageDetailsCardProps>  = ({items})
         <div className="flex flex-wrap gap-20">
 
             {items.map(item => (
-                <motion.div layoutId={item.id} onClick={() => setSelectedId(item.id)} className="bg-pink-500 p-24 flex-1">
+                <motion.div key={item.id} layoutId={item.id} onClick={() => setSelectedId(item.id)} className="bg-pink-500 p-24 flex-1">
                     <motion.h5>{item.subtitle}</motion.h5>
                     <motion.h2>{item.title}</motion.h2>
                 </motion.div>
