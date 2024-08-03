@@ -5,14 +5,18 @@ provider "google" {
 }
 
 # Create a Google Cloud Run service
-resource "google_cloud_run_service" "nextjs_app" {
+
+resource "google_cloud_run_service" "${var.app_name}" {
   name     = var.app_name
   location = var.region
 
   template {
     spec {
       containers {
-        image = "gcr.io/${var.project_id}/${var.image_name}:${var.image_tag}"
+        image = var.image_name
+        ports {
+          container_port = 8080
+        }
       }
     }
   }
