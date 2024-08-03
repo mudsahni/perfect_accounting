@@ -1,6 +1,5 @@
 # Define the Google provider
 provider "google" {
-  credentials = file("./perfect-accounting-0630c7d6877d.json")
   project     = var.project_id
   region      = var.region
 }
