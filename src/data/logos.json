@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Expedia Group",
+    "path": "/images/logos/expedia.svg"
+  },
+  {
+    "name": "Adidas",
+    "path": "/images/logos/adidas.svg"
+  },
+  {
+    "name": "Carrefour",
+    "path": "/images/logos/carrefour.svg"
+  },
+  {
+    "name": "Reebok",
+    "path": "/images/logos/reebok.svg"
+  },
+  {
+    "name": "HBO",
+    "path": "/images/logos/hbo.svg"
+  },
+  {
+    "name": "Standard Chartered",
+    "path": "/images/logos/standardchartered.svg"
+  },
+  {
+    "name": "Walmart",
+    "path": "/images/logos/walmart.svg"
+  }
+
+]

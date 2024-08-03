@@ -1,0 +1,72 @@
+@keyframes blob {
+    0%, 100% {
+        background-position: 50% 50%;
+    }
+    25% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    75% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero-background-animation {
+    background:
+            radial-gradient(circle at 50% 40%, rgba(245, 245, 244, 0.02) 30%, transparent 30%),
+            radial-gradient(circle at 50% 60%, rgba(245, 245, 244, 0.02) 30%, transparent 30%),
+                /*radial-gradient(ellipse at center, #ff7675 10%, #feca57 30%, #5f27cd 50%, #54a0ff 70%, #3730A3 90%);*/
+            radial-gradient(ellipse at center, #ff7675 10%, #feca57 30%, #5f27cd 50%, #54a0ff 70%, #3730A3 90%);
+    background-size: 100px 100px, 100px 100px, 800% 800%, cover;
+    animation: blob 60s infinite ease-in-out;
+    position: relative; /* Allows absolute positioning of children relative to this parent */
+}
+
+.hero-background-overlay {
+    background-image: url('/images/waveBackground8.png');
+    background-repeat: no-repeat;
+    background-position: bottom center; /* Position at the bottom center */
+    background-size: cover; /* Cover the entire area of the div */
+    width: 100%; /* Ensure the div is full width */
+    height: 100%; /* Ensure the div is full height */
+    position: absolute; /* Position absolutely within the relative parent */
+    bottom: 0; /* Anchor it to the bottom */
+
+}
+
+.bg-blob-animation {
+    background:
+            radial-gradient(circle at 50% 40%, rgba(245, 245, 244, 0.01) 30%, transparent 30%),
+            radial-gradient(circle at 50% 60%, rgba(245, 245, 244, 0.01) 30%, transparent 30%),
+            /*radial-gradient(ellipse at center, #ff7675 10%, #feca57 30%, #5f27cd 50%, #54a0ff 70%, #3730A3 90%);*/
+            radial-gradient(ellipse at center, #ff7675 10%, #feca57 30%, #5f27cd 50%, #54a0ff 70%, #3730A3 90%);
+    background-size: 100px 100px, 100px 100px, 800% 800%;
+    animation: blob 60s infinite ease-in-out;
+    /*filter: blur(1px); !* Only applies to the background *!*/
+    /*backdrop-filter: blur(20px); !* Use backdrop-filter to limit effect scope *!*/
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Ensure text is not affected by background styles */
+.hero-banner h1 {
+    position: relative; /* Ensure the text is above the background */
+    box-shadow: none; /* Remove or adjust box-shadow */
+
+}
+
+@keyframes wave-diagonal-motion {
+    0% {
+        background-position: 100% 80%;
+    }
+    100% {
+        background-position: 50% 100%;
+    }
+}
+
+.bg-wave-animation {
+    animation: wave-diagonal-motion 10s infinite linear;
+}

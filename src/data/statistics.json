@@ -1,0 +1,35 @@
+[
+  {
+    "statistic": "Across 20+",
+    "title": "Industries",
+    "description": "Vel labore deleniti veniam consequuntur sunt nobis.",
+    "textColor": "text-gray",
+    "backgroundColor": "bg-white",
+    "size": "small"
+  },
+  {
+    "statistic": "$8.9 billion",
+    "title": "We’re proud that our customers have made over $8 billion in total revenue.",
+    "description": "Eu duis porta aliquam ornare. Elementum eget magna egestas.",
+    "textColor": "text-white",
+    "backgroundColor": "bg-gray-900",
+    "size": "large"
+  },
+  {
+    "statistic": "401,093",
+    "title": "Transactions this year",
+    "description": "Eu duis porta aliquam ornare. Elementum eget magna egestas. Eu duis porta aliquam ornare.",
+    "textColor": "text-white",
+    "backgroundColor": "bg-indigo-600",
+    "size": "medium"
+  },
+  {
+    "statistic": "168",
+    "title": "Talented employees",
+    "description": "Eu duis porta aliquam ornare. Elementum eget magna egestas. Eu duis porta aliquam ornare.",
+    "textColor": "text-gray",
+    "backgroundColor": "bg-white",
+    "size": "small"
+  }
+
+]

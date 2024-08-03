@@ -1,0 +1,40 @@
+/* Add to your global stylesheet */
+@keyframes fillAnimation {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.background-fill {
+    position: relative;
+    overflow: hidden;
+}
+
+.background-fill::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: inherit; /* Use CSS variable */
+    animation: fillAnimation 1.5s ease forwards; /* Adjust timing as needed */
+}
+
+.fade-in-text {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1.5s; /* Should start after the background fill */
+}

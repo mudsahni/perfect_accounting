@@ -1,0 +1,31 @@
+.logo-container img {
+    transition: transform 1s ease-in-out; /* Smooth transition for transform changes */
+}
+
+.logoItem {
+    flex: 0 0 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.logoItem.visible {
+    opacity: 1;
+}
+
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover .arrow {
+    animation: arrow-move 1s ease-in-out infinite;
+}
+
+@keyframes arrow-move {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+}

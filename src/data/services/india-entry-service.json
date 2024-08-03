@@ -1,0 +1,35 @@
+{
+  "title": "India Entry Service",
+  "description": "Unlock the potential of your business in India with our comprehensive India Entry Services. We offer tailored advisory and facilitation services to ensure your venture in India starts smoothly and complies with all legal and financial regulations. Our expertise spans across establishing your presence, handling regulatory matters, and supporting your business operations every step of the way.",
+  "services": [
+    {
+      "title": "India Entry Advisory",
+      "points": [
+        "Providing guidance on the mode and form of business establishment in India, including sectorial restrictions, taxation impacts, and the most suitable form of business entity, whether it be a branch, representative office, subsidiary company, or LLP.\n"
+      ]
+    },
+    {
+      "title": "Facilitating Entity Registration",
+      "points": [
+        "Assisting in the registration of companies or LLPs under the Companies Act/LLP Act.",
+        "Facilitating the establishment of trusts, societies, and non-profit organizations.",
+        "Obtaining approvals for branch, liaison, or project offices from the RBI and ROC.",
+        "Ensuring tax and labor law registrations are in place in accordance with foreign investment compliances and various applicable laws.",
+        "Registering units under Special Economic Zones (SEZ), Software Technology Parks of India (STPI), and Free Trade Warehousing Zones (FTWZ).",
+        "Assisting in the registration of Non-Banking Financial Companies (NBFC) with RBI.",
+        "Obtaining Legal Entity Identification numbers as per RBI guidelines.",
+        "Providing business support services, including registered office services, resident directors, and independent directors.",
+        "Assisting in obtaining Micro, Small, and Medium Enterprises (MSME) registration.",
+        "Assisting in obtaining FRRO registration for foreign personnel."
+      ]
+    },
+    {
+      "title": "Share Acquisition",
+      "points": [
+        "Assisting in the drafting of share purchase agreements.",
+        "Ensuring compliance with share transfer regulations under the Companies Act and the Foreign Exchange Management Act (FEMA) for non-resident shareholders.",
+        "Managing tax implications and compliance related to the transaction."
+      ]
+    }
+  ]
+}

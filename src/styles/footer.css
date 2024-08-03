@@ -1,0 +1,25 @@
+/* Add this CSS to your styles.css file or within a <style> tag in your React component */
+
+@keyframes slideGradient {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.animated-background {
+    background: linear-gradient(to right, #1D4ED8, #4F46E5, #7C3AED, #A855F7, #F0ABFC);
+    background-size: 200% 200%; /* Make the gradient large enough to allow smooth sliding */
+    animation: slideGradient 10s linear infinite;
+    position: relative; /* Allows absolute positioning of children relative to this parent */
+}
+
+.animated-border {
+    border-image: linear-gradient(to right, #1D4ED8, #4F46E5, #7C3AED, #A855F7, #F0ABFC);
+}
+.image-overlay {
+    background-image: url('/images/waveBackgroundTopRight.png');
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,35 @@
+.animated-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+    /*background: radial-gradient(ellipse at center, #EF4444 10%, #4F46E5 30%, #9A3412 50%, #54a0ff 70%, #fff 90%);*/
+    background: linear-gradient(to right, #EF4444 10%, #4F46E5 30%, #92400E 50%, #54a0ff 70%, #F87171 90%);
+    background-size: 300% 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: moveGradient 10s infinite ease-in-out;
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animated-text-white {
+    font-size: 48px;
+    font-weight: bold;
+    color: rgba(245, 245, 244, 0.85);
+    /*background: radial-gradient(ellipse at center, #EF4444 10%, #4F46E5 30%, #9A3412 50%, #854D0E 70%, #92400E 90%);*/
+    background: linear-gradient(to right, #EF4444 10%, #4F46E5 30%, #15803D 50%, #92400E 70%, #10B981 90%);
+    background-size: 300% 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: moveGradient 10s infinite ease-in-out;
+}

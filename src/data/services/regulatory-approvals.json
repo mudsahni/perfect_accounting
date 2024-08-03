@@ -1,0 +1,52 @@
+{
+  "title": "Regulatory Approvals",
+  "description": "Expert assistance in navigating through the complex landscape of regulatory approvals across various government bodies and legal frameworks, ensuring compliance and facilitating foreign and domestic investments.",
+  "services": [
+    {
+      "title": "Ministry of Home Affairs (MHA) Approvals",
+      "points": [
+        "Obtaining prior approval or registration to accept foreign contributions under the Foreign Contribution (Regulation) Act (FCRA).",
+        "Seeking post facto approval for foreign contributions received in violation of FCRA regulations.",
+        "Filing annual returns and handling other compliance requirements for societies or trusts accepting foreign contributions."
+      ]
+    },
+    {
+      "title": "Ministry of Corporate Affairs (MCA) Approvals",
+      "points": [
+        "Obtaining approvals and exemptions under various provisions of the Companies Act, 2013."
+      ]
+    },
+    {
+      "title": "Facilitating Foreign Investment",
+      "points": [
+        "Obtaining approval from respective ministries for activities not covered under the automatic investment route.",
+        "Approval for share transfers between resident and non-resident Indians in sectors not covered by the automatic route.",
+        "Seeking clarifications on FEMA provisions from the Department of Industrial Policy and Promotion (DIPP)."
+      ]
+    },
+    {
+      "title": "Foreign Exchange Management Act, 1999 (FEMA) Approvals",
+      "points": [
+        "Preparing and filing form FC-GPR for issuing shares to non-resident investors.",
+        "Filing annual return on foreign liabilities and assets with the Reserve Bank of India.",
+        "Handling compounding of offences under FEMA regulations.",
+        "Obtaining various approvals under FEMA for activities such as external commercial borrowings and operation of foreign liaison offices in India.",
+        "Seeking specific case clarifications from RBI regional or central offices.",
+        "Advising on overseas direct investment, portfolio investments, and liberalized remittance schemes.",
+        "Representing or advising on matters related to the Enforcement Directorate."
+      ]
+    },
+    {
+      "title": "Companies Act, 2013 Approvals",
+      "points": [
+        "Seeking approvals for shifting registered office across state lines.",
+        "Approval for unconventional financial year endings.",
+        "Representing and seeking clearances on restructuring matters such as mergers, demergers, and buybacks.",
+        "Handling compounding of offences under the Companies Act, 2013.",
+        "Seeking extensions for holding Annual General Meetings (AGM) from the Registrar of Companies (ROC).",
+        "Assisting in the conversion of firms or companies into LLPs or from private to public companies.",
+        "Obtaining approvals related to Corporate Social Responsibility (CSR) activities."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "title": "Accounting and Compliance Services",
+  "description": "Offering a wide range of accounting and compliance solutions tailored for project-specific support and comprehensive onshore and offshore outsourcing services, ensuring adherence to international and local financial standards.",
+  "services": [
+    {
+      "title": "Project Based Support Services",
+      "points": [
+        "Preparation of accounting manuals, including charts of accounts, to align policies across various locations and group companies.",
+        "Support in developing business processes with strong internal controls covering the entire financial cycle from procurement to payment and revenue recognition.",
+        "Assistance in auditing and creation of master data for vendors and customers in the business system.",
+        "Support in financial statement closing processes, including preparation of audit schedules, interactions with auditors, and resolution of audit queries.",
+        "Preparation of financial statements adhering to GAAP and specific holding company requirements.",
+        "Conversion of financial statements from Indian GAAP to IFRS or Ind AS.",
+        "Development of Management Information Systems (MIS) for executive management.",
+        "Physical verification of fixed assets, inventory, and other assets.",
+        "Process-specific accounting support such as vendor payments, inventory valuation, and claims processing.",
+        "Preparation of reconciliations required under tax regulations and for financial audits."
+      ]
+    },
+    {
+      "title": "Offshore Business Process Outsourcing Services",
+      "points": [
+        "Comprehensive accounting setup including manual preparation and transaction recording.",
+        "Ensuring rigorous documentation across all financial processes.",
+        "Routine handling of accounts payable, accounts receivable, and employee expense claims.",
+        "Regular maintenance and updating of fixed asset registers and conducting asset verifications.",
+        "Assisting in bank operations and reconciliations.",
+        "Monthly and year-end financial reporting.",
+        "Support during various financial and regulatory audits."
+      ]
+    },
+    {
+      "title": "Onshore Business Process Outsourcing Services",
+      "points": [
+        "Accounting and transaction entry into software systems, ensuring compliance with local tax laws and regulations.",
+        "Calculation and timely payment of taxes such as withholding tax, GST, and other government levies.",
+        "Preparation and filing of tax returns, and ensuring compliance with financial reporting requirements.",
+        "Maintenance of proper documentation and compliance with statutory and internal audit requirements.",
+        "Regular updates to fixed assets registers, including tagging of assets and physical verifications.",
+        "Detailed and timely financial statement preparation in compliance with GAAP and other regulatory requirements."
+      ]
+    }
+  ]
+}

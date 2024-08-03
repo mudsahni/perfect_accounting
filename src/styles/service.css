@@ -1,0 +1,22 @@
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.background-container {
+    width: 100%; /* Adjust based on your need */
+    height: 800px; /* Adjust based on your need */
+    max-height: 100vh;
+    background-image: url('/images/waveBackground8.png'), linear-gradient(to right, #ff7e5f, #feb47b);
+    background-repeat: no-repeat, repeat; /* No repeat for image, repeat for gradient */
+    background-position: center, 0 0;
+    background-size: cover, cover; /* Contain the image within the div, cover the div with the gradient */
+}
+

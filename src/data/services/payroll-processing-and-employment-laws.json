@@ -1,0 +1,31 @@
+{
+  "title": "Payroll Processing and Employment Laws",
+  "description": "Specialized services designed to manage payroll processing and ensure compliance with national employment laws, helping businesses streamline operations and meet statutory obligations.",
+  "services": [
+    {
+      "title": "Payroll Processing Services",
+      "points": [
+        "Monthly payroll processing, including perquisites and reimbursement balance tracking.",
+        "Calculation and depositing of withholding tax, provident fund (PF), employee state insurance (ESI), and other applicable deductions.",
+        "Issuance of detailed salary slips and employment tax computations through a web-enabled interface.",
+        "Provision of diverse payroll reports as per management requirements."
+      ]
+    },
+    {
+      "title": "Tax and Deductions Compliance",
+      "points": [
+        "Ensuring timely deposit of withholding tax and other dues such as PF, ESI, professional tax, according to statutory deadlines.",
+        "Maintaining detailed employee-wise contribution records for PF, ESI, and other statutory funds.",
+        "Preparation and filing of quarterly withholding tax returns and other statutory filings."
+      ]
+    },
+    {
+      "title": "Employment Law Advisory and Compliance",
+      "points": [
+        "Advisory services on the applicability of various labor laws based on employee numbers and locations.",
+        "Comprehensive compliance support under laws including the Provident Fund Act, Professional Tax Act, Employee State Insurance Act, and more.",
+        "Assistance during audits by government authorities and management of statutory audit processes."
+      ]
+    }
+  ]
+}

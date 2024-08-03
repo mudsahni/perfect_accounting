@@ -1,0 +1,14 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import './swirlingBackground.css';
+@import './common.css';
+@import './statistics.css';
+@import './testimonials.css';
+@import './footer.css';
+@import './wave.css';
+@import './hero.css';
+@import './waveContainer.css';
+@import './service.css';
+@import './cycleLogos.css';
+@import './logoCloud.css';
+@import 'tailwindcss/utilities';
