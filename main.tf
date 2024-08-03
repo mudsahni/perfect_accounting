@@ -15,7 +15,7 @@ resource "google_cloud_run_service" "nextjs_app" {
       containers {
         image = var.image_name
         ports {
-          container_port = 8080
+          container_port = 3000
         }
       }
     }
