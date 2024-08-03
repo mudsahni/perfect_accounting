@@ -12,7 +12,7 @@ resource "google_cloud_run_service" "nextjs_app" {
   template {
     spec {
       containers {
-        image = "gcr.io/${var.project_id}/${var.image_name}:latest"
+        image = "gcr.io/${var.project_id}/${var.image_name}:${var.image_tag}"
       }
     }
   }

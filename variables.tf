@@ -1,20 +1,20 @@
-# variables.tf
-
 variable "project_id" {
-  description = "perfect-accounting"
+  description = "The ID of the Google Cloud project"
 }
 
 variable "region" {
-  description = "GCP region"
-  default     = "us-central1"
+  description = "The region to deploy the service"
 }
 
 variable "app_name" {
-  description = "Name of your Next.js app"
-  default     = "perfect-accounting-nextjs-app"
+  description = "The name of the Cloud Run service"
 }
 
 variable "image_name" {
-  description = "Name of the Docker image"
-  default     = "perfect-accounting-nextjs-app-image"
+  description = "The name of the container image"
+}
+
+variable "image_tag" {
+  description = "The tag of the container image"
+  default     = "latest"
 }
