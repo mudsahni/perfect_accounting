@@ -109,3 +109,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.terraform
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+
+perfect-accounting-0630c7d6877d.json

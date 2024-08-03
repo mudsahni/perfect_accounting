@@ -14,7 +14,7 @@ export default function Features() {
                 </div>
                 <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-2 text-base leading-7 text-gray-900 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
                     {services.map((feature) => (
-                        <Link href={`services/${feature.name.toLowerCase().split(' ').join('-')}`}>
+                        <Link key ={feature.name} href={`services/${feature.name.toLowerCase().split(' ').join('-')}`}>
                             <div key={feature.name} className="relative pl-9 hover:bg-stone-200 transition duration-100 ease-in-out cursor-pointer rounded-xl py-6 px-4">
                                 <dt className="inline font-semibold text-stone-800">
                                     <feature.icon aria-hidden="true" className="absolute left-2 top-7 h-5 w-5 text-indigo-500" />
