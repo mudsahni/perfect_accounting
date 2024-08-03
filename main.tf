@@ -6,7 +6,7 @@ provider "google" {
 
 # Create a Google Cloud Run service
 
-resource "google_cloud_run_service" "${var.app_name}" {
+resource "google_cloud_run_service" "nextjs_app" {
   name     = var.app_name
   location = var.region
 
